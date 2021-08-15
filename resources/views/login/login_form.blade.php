@@ -29,6 +29,10 @@
         </div>
     @endif
 
+    <x-alert type="danger" :session="session('login_error')" />
+
+    <x-alert type="info" :session="session('logout')" />
+
     <label for="inputEmail" class="sr-only">Email address</label>
     <input type="email" name="email" id="inputEmail" class="form-control" placeholder="Email address" autofocus>
     <label for="inputPassword" class="sr-only">Password</label>
